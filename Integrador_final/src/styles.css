@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+article {
+  color :rgb(44, 47, 196);
+
+}
+.card-body {
+background-color:beige;
+}
+
+
+
+.redes_sociales {
+  width: 40%;
+  height: 100px;
+  margin: 2px;
+  font-variant-alternates: normal;
+  float: left;
+  }
+
+
+
+.container-login {
+float: right;
+margin: 1%;
+padding-bottom: 2%;
+}
+
+.dropdown {
+  float: right;
+  margin: 1%
+
+}
+
+
+
+.logoargentina img{
+  width: 70px; height: 70px;
+  padding: 0;
+  border: 1px;
+  display: inline;
+  margin: 2px, 2px;
+}
+
+.logoargentina {
+  width: 20%;
+  height: 50px;
+  float:left;
+  margin: 3px;
+}
+
+.imagenprototipo {
+  margin: 5px;
+  width: 100%;
+  height: 400px;
+  clear: both;
+}
+
+.imagenprototipo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+}
+
+.fotoperfil img {
+
+  border: 2px;
+  border-radius: 50%;
+  margin-left: 10px;
+  float: left;
+  position:absolute;
+  left: 50px; top: 450px; z-index: 1;
+}
+
+.fotoperfil {
+  margin: 5px;
+  width: 100%;
+  border-color: black;
+}
+
+.card {
+  margin-top: 10%;
+  color: red;
+}
+.card-text {
+  float:right;
+
+}
+
+.experiencia {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aquamarine;
+  margin-top: 0;
+  padding: 50px;
+  width: 100%;
+  height: 100px;
+  float: left;
+  border: 2px solid red;
+}
+.estudios {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(234, 127, 255);
+  margin: 0;
+  padding: 50px;
+  width: 100%;
+  height: 100px;
+  float: left;
+  border: 2px solid red;
+}
+.habilidades {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgb(234, 127, 255);
+  margin-top: 0;
+  padding: 50px;
+  width: 100%;
+  height: 100px;
+  float: left;
+  border: 2px solid red;
+
+}
+
+.barra_circular{
+
+  height: 150px;
+  width: 150px;
+  line-height: 150px;
+  background: blue;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+ }
+
+.progress{
+  content:"";
+  width: 100%;
+  height: 100%;
+  border-radius:50% ;
+  border: 15px solid #f2f5;
+  position:absolute;
+  top: 0;
+  left: 0;
+}
