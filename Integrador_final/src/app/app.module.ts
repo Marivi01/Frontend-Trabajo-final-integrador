@@ -9,6 +9,10 @@ import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
 import { HttpClientModule} from '@angular/common/http';
+import { ConociminentosComponent } from './components/conociminentos/conociminentos.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,13 +21,16 @@ import { HttpClientModule} from '@angular/common/http';
     AcercaDeComponent,
     ExperienciaComponent,
     EstudiosComponent,
+    ConociminentosComponent,
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
