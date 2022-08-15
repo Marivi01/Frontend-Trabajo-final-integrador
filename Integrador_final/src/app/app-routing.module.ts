@@ -3,10 +3,10 @@ import { PorfolioComponent } from './components/porfolio/porfolio.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [
-  {path: 'porfolio', component: PorfolioComponent},
-  {path: 'iniciar sesión', component: IniciarSesionComponent},
-  {path:'', redirectTo: 'iniciar sesión', pathMatch: 'full'}
+const routes:Routes=[
+ {path: 'porfolio', component: PorfolioComponent},
+  {path: 'iniciar-sesion', component: IniciarSesionComponent},
+  {path:'', redirectTo: 'iniciar-sesion', pathMatch:'full'}
 ];
 
 @NgModule({
