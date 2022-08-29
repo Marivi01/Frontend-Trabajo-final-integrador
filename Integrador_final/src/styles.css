@@ -15,46 +15,38 @@ background-color:beige;
 
 
 
-.redes_sociales {
-  width: 40%;
+ /* .redes_sociales {
+  width: 40px;
   height: 100px;
-  margin: 2px;
+  margin: center;
   font-variant-alternates: normal;
-  float: left;
+  float: center;
   text-align: center;
+display: inline;
+
   }
 
 
 
 .container-login {
-float: right;
-margin: 1%;
+
+margin: right;
 padding-bottom: 2%;
-text-align: right;
+float:right;
+display: inline;
+
+
 }
 
 .dropdown {
-  float: right;
+
   margin: 1%
 
-}
+} */
 
 
 
-.logoargentina img{
-  width: 50px; height: 50px;
-  padding: 0;
-  border: 0px;
-  display: inline;
-  margin: 0;
-}
 
-.logoargentina {
-  width: 20px;
-  height: 20px;
-  float:left;
-  margin:0;
-}
 
 .imagenprototipo {
   margin: 0px;
@@ -72,20 +64,20 @@ text-align: right;
 
 .fotoperfil img {
 
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border: 2px;
   border-radius: 50%;
   margin-left: 10px;
   float: left;
-  position:absolute;
-  left: 50px; top: 400px; z-index: 1;
+  position:relative;
+  left: 20px; top: -90px; z-index: 1;
 }
 
 .fotoperfil {
   margin: 5px;
   width: 100%;
-  border-color: black;
+  border-color: red;
 }
 
 .card {
@@ -97,7 +89,7 @@ text-align: right;
 
 }
 
-.experiencia {
+/* .experiencia {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: aquamarine;
   margin-top: 0;
@@ -106,8 +98,8 @@ text-align: right;
   height: 100px;
   float: left;
   border: 2px solid red;
-}
-.estudios {
+} */
+/* .estudios {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(234, 127, 255);
   margin: 0;
@@ -116,7 +108,7 @@ text-align: right;
   height: 100px;
   float: left;
   border: 2px solid red;
-}
+} */
 .habilidades {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(234, 127, 255);

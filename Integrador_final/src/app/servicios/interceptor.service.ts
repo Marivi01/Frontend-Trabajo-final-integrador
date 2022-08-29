@@ -15,9 +15,11 @@ export class InterceptorService implements HttpInterceptor{
   if(currentUser && currentUser.accesToken)
   {
     req=req.clone({
-     setHeaders:{Authorization: "Bearer ${currentUser.accesToken}"}
+     setHeaders:{Authorization: "Bearer ${token}"}
     });
+    console.log(req)
   }
+
   console.log('el servicio de interceptor esta corriendo' + JSON.stringify(currentUser))
   return next.handle(req)
 }

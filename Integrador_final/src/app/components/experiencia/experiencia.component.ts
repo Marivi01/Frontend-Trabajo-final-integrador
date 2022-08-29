@@ -1,3 +1,7 @@
+import { Experiencia } from './../../model/experiencia';
+import { ExperienciaService } from './../../servicios/experiencia.service';
+
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +10,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experiencia.component.css']
 })
 export class ExperienciaComponent implements OnInit {
+  expe: Experiencia[] = [];
 
-  constructor() { }
+  constructor(private experienciaService: ExperienciaService) {}
+
+
+
 
   ngOnInit(): void {
+    this.cargarExperiencia();
+
   }
 
+cargarExperiencia(): void{
+  this.experienciaService.lista().subscribe(data=>{this.expe=data;})
+
 }
+}
+
+
+
+
+

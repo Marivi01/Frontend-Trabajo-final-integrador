@@ -17,7 +17,10 @@ import { LogotipoRedesLoginComponent } from './components/header/logotipo-redes-
 import { IniciarSesionComponent } from './components/iniciar-sesion/iniciar-sesion.component';
 import { PorfolioComponent } from './components/porfolio/porfolio.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { PersonaService } from './servicios/persona.service';
+import { EdicionComponent } from './components/edicion/edicion.component';
+import { NuevaExperienciaComponent } from './components/edicion/nueva-experiencia/nueva-experiencia.component';
+import { CommonModule } from '@angular/common';
+import { ExperienciaService } from './servicios/experiencia.service';
 
 @NgModule({
   declarations: [
@@ -31,8 +34,10 @@ import { PersonaService } from './servicios/persona.service';
     LogotipoRedesLoginComponent,
     IniciarSesionComponent,
     PorfolioComponent,
-    AcercaDeComponent
-
+    AcercaDeComponent,
+    EdicionComponent,
+    NuevaExperienciaComponent,
+    
 
   ],
   imports: [
@@ -42,7 +47,9 @@ import { PersonaService } from './servicios/persona.service';
     NgbModule,
     NgCircleProgressModule.forRoot({}),
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    CommonModule
+
   ],
   providers: [ {provide:HTTP_INTERCEPTORS, useClass: InterceptorService, multi:true}],
   bootstrap: [AppComponent]

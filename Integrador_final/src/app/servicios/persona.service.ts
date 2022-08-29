@@ -1,19 +1,22 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { persona } from '../model/persona.model';
+import { Persona } from '../model/persona.model';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersonaService {
-url = 'http://localhost:8080';
+ // url:string = 'http://localhost:8080';
+ url:string = 'https://backporfolio1.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 
-  public getPersona(): Observable<persona>{
-    return this.http.get<persona>('https://localhost:8080/buscar/persona/1')
-//return this.http.get<persona>(this.url + '/buscar/persona/1')
+  public getPersona(): Observable<Persona>{
+   // return this.http.get<Persona>
+    //('../../assets/data/data.json')
+   // return this.http.get<Persona>(this.url +'/ver/personas')
+return this.http.get<Persona>(this.url + '/buscar/persona/1')
   }
 }

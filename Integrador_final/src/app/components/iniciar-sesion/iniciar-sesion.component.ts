@@ -40,7 +40,7 @@ return this.form.get('nombreUsuario');
     event.preventDefault;
     this.autenticacionService.IniciarSesion(this.form.value).subscribe((data)=>{
       console.log("DATA:" +JSON.stringify(data));
-      this.ruta.navigate (['./porfolio']);
+      this.ruta.navigate (['./edicion']);
     })
 
   }

@@ -1,8 +1,9 @@
-
+<div class="row">
+  <div class="col-lg-6" class="formulario_login">
 <form [formGroup]="form" class="m-5" (ngSubmit)="onEnviar($event)">
   <h2> Iniciar Sesión</h2>
   <div  class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">nombreUsuario</label>
+    <label for="exampleInputEmail" class="form-label">nombreUsuario</label>
     <input type="text" class="form-control" formControlName="nombreUsuario"
     id="exampleInputEmail1" aria-describedby="emailHelp">
 
@@ -35,6 +36,8 @@
 
   <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+</div>
+</div>
 
 
 
@@ -43,41 +46,3 @@
 
 
 
-<!--<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-  <div class="container-login">
-
-   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Login</button>
-  </div>
-  </div>
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-   <div class="modal-content">
-     <div class="modal-header">
-
-       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-     </div>
-     <div class="modal-body">
-       <div>
-         <div [formGroup]="form" class="mb-3">
-           <label for="recipient-name" class="col-form-label">Usuario:</label>
-           <input formControlName="email" type="text" class="form-control" id="recipient-name">
-         </div>
-         <div class="mb-3">
-           <label for="recipient-name" class="col-form-label">Contraseña:</label>
-           <input type="password" class="form-control" id="recipient-name">
-         </div>
-         <div class="mb-3">
-
-         <p> <a href="#">¿olvidaste tu contraseña?</a></p>
-
-     </div>
-     <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary">Send message</button>
-    </div>
-   </div>
- </div>
- </div>
- </div>
- </div>-->
