@@ -1,0 +1,94 @@
+<div class="exp">
+
+<div class="container">
+<div  class="row">
+  <div class="col">
+
+
+<table class="table caption-top" >
+
+  <caption><h2>Experiencia Laboral</h2></caption>
+  <thead class="col-m-3">
+    <tr
+    class="table table-success table-striped">
+      <th>Nombre de la empresa</th>
+      <th>Descripcion de la tarea</th>
+
+    </tr>
+  </thead>
+  <tbody class="col-m-3">
+    <tr *ngFor="let Experiencia of expe">
+      <td><h6>{{Experiencia.nombreExp}}</h6></td>
+      <td>{{Experiencia.descripcionExp}}</td>
+
+        <!-- <td>
+         <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+            <i class="bi bi-pencil-fill"></i> Editar</button></td>
+           <td> <button><i class=" "></i>Borrar</button>
+    </td> -->
+    </tr>
+</table>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- table class="table"> fin
+  <tbody> -->
+<!--
+    <tr >
+      <td *NgFor="let Experiencia of expe">{{Experiencia.nombreExp}} </td>
+      <td *NgFor="let Experiencia of expe">{{Experiencia.descripcionExp}}</td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- <td>{{Experiencia.descripcionExp}}</td> -->
+<!-- <div class="col lg 1"></div>
+<div class="col-lg-11">
+    <table class="table">
+        <tbody>
+            <tr *ngFor="let Experiencia of expe">
+                <td>
+                    <h2>{{Experiencia.nombreE}}</h2>
+                </td>
+                <td>{{Experiencia.descripcionE}}</td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                        <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+ -->
+   <!--  <h5 class="card-title">Experiencia</h5>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>-->
+
+
+    <!-- <div class="card-text" >
+    <h5>Secretaria Administrativa: Lordi & cia. s.c.a.  </h5>
+     <br> Cajas diarias, conciliaciones bancarias, contabilidad, facturación.
+    <p> Atención al público</p>
+    <p></p>
+   </div>  -->
+   <!-- <h1>Experiencia Laboral</h1>
+   <div *ngFor="let Experiencia of expe">
+    <div class="col lg 2"></div>
+       <h2>{{Experiencia.nombreExp}}</h2>
+   <div  class="col-4"> </div>
+   <div  class="col-4"> </div>
+   <div  class="col-4"> </div>
+
+    <p>{{Experiencia.descripcionExp}}</p>
+
+   </div>-->
+
+
+

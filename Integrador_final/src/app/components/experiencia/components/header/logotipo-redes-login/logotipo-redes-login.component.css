@@ -1,0 +1,28 @@
+* { background-color: rgb(191, 224, 230);}
+.container-login{
+  background-color: aliceblue;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ img{
+
+  height: 40px;
+  margin: 2px;
+  border-radius: 15%;
+}
+
+.logoargentina {
+
+  height: 40px;
+  margin: 2px;
+  border-radius: 15%;
+}
+
+
+.boton_login{
+margin:5px;
+}

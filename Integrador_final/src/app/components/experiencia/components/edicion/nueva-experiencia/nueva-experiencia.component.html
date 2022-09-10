@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+    <h4>Editar o cargar experiencia laboral</h4>
+      <div>
+          <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+              <div class="form-group">
+                  <label for="nombreExp">Nombre de la empresa</label>
+                  <input type="text" class="form-control" id="nombreExp"
+                  name="nombreExp" [(ngModel)]="nombreExp" required>
+              </div>
+              <div class="form-group">
+                  <label for="descripcionExp">Descripcion de la tarea</label>
+                  <input type="text" class="form-control" id="descripcionExp"
+                   name="descripcionExp" [(ngModel)]="descripcionExp" required>
+              </div>
+              <button class="btn btn-primary">
+                  Agregar experiencia
+              </button>
+          </form>
+      </div>
+  </div>
+</div>
+<!-- <div class="exp"> -->
+
+  <div class="container">
+  <div  class="row">
+    <div class="col">
+
+
+  <table class="table caption-top" >
+
+    <caption><h2>Experiencia Laboral</h2></caption>
+    <thead class="col-m-3">
+      <tr
+      class="table table-success table-stripe">
+        <th>Nombre de la empresa</th>
+        <th>Descripcion de la tarea</th>
+
+      </tr>
+    </thead>
+    <tbody class="col-m-3">
+      <tr *ngFor="let Experiencia of expe">
+        <td><h6>{{Experiencia.nombreExp}}</h6></td>
+        <td>{{Experiencia.descripcionExp}}</td>
+
+          <td>
+           <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+              <i class="bi bi-pencil-fill"></i> Editar</button></td>
+              <td>
+                <button class="btn btn-danger"(click)="delete(Experiencia.id)">
+                  Borrar</button></td>
+      </tr>
+  </table>
+
+
+  </div>
+  </div>
+  </div>
+  <!-- </div> -->

@@ -1,0 +1,35 @@
+
+<div class="exp">
+
+<div class="container">
+<div  class="row">
+  <div class="col">
+
+
+<table class="table caption-top" >
+
+  <caption><h2>Proyectos Realizados</h2></caption>
+  <thead class="col-m-3">
+    <tr
+    class="table table-success table-striped">
+      <th>Nombre del Proyecto</th>
+      <th>Enlace</th>
+
+    </tr>
+  </thead>
+  <tbody class="col-m-3">
+    <tr *ngFor="let Proyecto of projects">
+      <td><h6>{{Proyecto.nombreProj}}</h6></td>
+      <td>{{Proyecto.urlProj}}</td>
+      <!-- <td *ngIf="isLogged"> -->
+        <td *ngIf="isLogged">
+        <button class="btn btn-light" routerLink="/edicion">
+            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+    </td>
+    </tr>
+</table>
+
+</div>
+</div>
+</div>
+</div>
