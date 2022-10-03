@@ -1,11 +1,32 @@
-<div class="card" style="width: 100%;">
-  <div class="card-body">
-    <h5 class="card-title">{{persona.nombre}} {{persona.apellido}}</h5>
-    <h6 class="card-subtitle mb-2 text-muted">{{persona.titulo}}</h6>
+<!-- <div class="container">
+  <div class="row">
+    <div class="card" style="width: 100%">
+      <div class="card-body">
+        <h5 class="card-title">{{ persona.nombre }} {{ persona.apellido }}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{ persona.titulo }}</h6>
 
-   <div class="card-text" >
-      <p >Soy una persona proactiva, con la capacidad de ampliar conocimientos, para proyectos modernos y funcionales. </p>
-   Cualquier consulta sera bien recibida, estoy a su/vuestra disposición. e-mail mvivianacarrizo01@gmail.com</div>
+        <h6 class="card-text">{{ persona.descripcion }}</h6>
+      </div>
+    </div>
   </div>
-
+</div>
+ -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-2 col-lg-2">
+      <img
+        src="../assets/imagenes/FotoPerfil_marivi01-01.png"
+        class="img-fluid"
+      />
+    </div>
+    <div class="col-sm-12 col-md-4 col-lg-4">
+      <h5 class="title">{{ persona.nombre }} {{ persona.apellido }}</h5>
+      <h6 class="title_2">{{ persona.titulo }}</h6>
+    </div>
+    <div class="text" class="col-lg-4">
+      {{ persona.descripcion }}
+      <h5>Acerca de mí</h5>
+      <h6>Soy una persona proactiva, en busca de nuevos conocimientos.</h6>
+    </div>
+  </div>
 </div>

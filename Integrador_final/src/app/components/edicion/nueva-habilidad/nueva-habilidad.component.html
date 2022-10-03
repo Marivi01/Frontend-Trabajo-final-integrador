@@ -1,68 +1,66 @@
 <div class="edicion">
   <div class="container">
     <div class="row">
-      <h4>Editar o cargar experiencia laboral</h4>
+      <h4>Editar o cargar habilidades</h4>
       <div>
         <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
           <div class="form-group">
-            <label for="nombreExp">Nombre de la empresa</label>
+            <label for="nombreHab">Nombre de la nueva-habilidad</label>
             <input
               type="text"
               class="form-control"
-              id="nombreExp"
-              name="nombreExp"
-              [(ngModel)]="nombreExp"
+              id="nombreHab"
+              name="nombreHab"
+              [(ngModel)]="nombreHab"
               required
             />
           </div>
           <div class="form-group">
-            <label for="descripcionExp">Descripcion de la tarea</label>
+            <label for="nivelHab">Porcentaje de la nueva habilidad</label>
             <input
               type="text"
               class="form-control"
-              id="descripcionExp"
-              name="descripcionExp"
-              [(ngModel)]="descripcionExp"
+              id="nivelHab"
+              name="nivelHab"
+              [(ngModel)]="nivelHab"
               required
             />
           </div>
-          <button class="btn btn-primary">Agregar experiencia</button>
+          <button class="btn btn-primary">Agregar habilidad</button>
         </form>
       </div>
     </div>
   </div>
-  <!-- <div class="exp"> -->
-
   <div class="container">
     <div class="row">
       <div class="col">
         <table class="table caption-top">
           <caption>
-            <h2>Experiencia Laboral</h2>
+            <h2>Habilidades</h2>
           </caption>
           <thead class="col-m-3">
             <tr class="table table-success table-stripe">
-              <th>Nombre de la empresa</th>
-              <th>Descripcion de la tarea</th>
+              <th>Skill</th>
+              <th>Nivel de habilidad</th>
             </tr>
           </thead>
           <tbody class="col-m-3">
-            <tr *ngFor="let Experiencia of expe">
+            <tr *ngFor="let Habilidades of habil">
               <td>
-                <h6>{{ Experiencia.nombreExp }}</h6>
+                <h6>{{ Habilidades.nombreHab }}</h6>
               </td>
-              <td>{{ Experiencia.descripcionExp }}</td>
+              <td>{{ Habilidades.nivelHab }}</td>
 
               <td>
                 <button
                   class="btn btn-light"
-                  routerLink="/editexp/{{ Experiencia.id }}"
+                  routerLink="/editarHabilidad/{{ Habilidades.id }}"
                 >
                   <i class="bi bi-pencil-fill"></i> Editar
                 </button>
               </td>
               <td>
-                <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                <button class="btn btn-danger" (click)="delete(Habilidades.id)">
                   Borrar
                 </button>
               </td>
@@ -73,4 +71,3 @@
     </div>
   </div>
 </div>
-<!-- </div> -->

@@ -1,0 +1,53 @@
+<div class="edicion">
+<div class="container">
+  <div class="row">
+    <h4>Editar o cargar Estudios</h4>
+      <div>
+          <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+              <div class="form-group">
+                  <label for="institucion">Nombre de la Institución</label>
+                  <input type="text" class="form-control" id="institucion1"
+                  name="institucion" [(ngModel)]="institucion" required>
+              </div>
+              <div class="form-group">
+                  <label for="titulo">Descripcion de Título</label>
+                  <input type="text" class="form-control" id="titulo1"
+                   name="titulo" [(ngModel)]="titulo" required>
+              </div>
+              <button class="btn btn-primary">
+                  Agregar  Estudios
+              </button>
+          </form>
+      </div>
+  </div>
+</div>
+<div class="container">
+  <div  class="row">
+    <div class="col">
+   <table class="table caption-top" >
+  <caption><h2>Estudios</h2></caption>
+    <thead class="col-m-3">
+      <tr
+      class="table table-success table-stripe">
+        <th>Institución</th>
+        <th>Descripcion del título</th>
+
+      </tr>
+    </thead>
+    <tbody class="col-m-3">
+      <tr *ngFor="let Estudios of est">
+        <td><h6>{{Estudios.institucion}}</h6></td>
+        <td>{{Estudios.titulo}}</td>
+
+          <td>
+           <button class="btn btn-light" routerLink="/editarEstudios/{{Estudios.id}}">
+              <i class="bi bi-pencil-fill"></i> Editar</button></td>
+              <td>
+                <button class="btn btn-danger"(click)="delete(Estudios.id)">
+                  Borrar</button></td>
+      </tr>
+  </table>
+  </div>
+  </div>
+  </div>
+</div>

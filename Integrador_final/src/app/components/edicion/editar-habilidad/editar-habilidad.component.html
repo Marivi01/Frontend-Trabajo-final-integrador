@@ -1,0 +1,32 @@
+<div class="container" *ngIf="hability">
+  <div class="row">
+    <h4>Editar habilidad</h4>
+    <div>
+      <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+        <div class="form-group">
+          <label for="nombreHab">Nombre de la empresa</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombreHab"
+            name="nombreHab"
+            [(ngModel)]="hability.nombreHab"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="nivelHab">Descripcion de la tarea</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nivelHab"
+            name="nivelHab"
+            [(ngModel)]="hability.nivelHab"
+            required
+          />
+        </div>
+        <button class="btn btn-primary">Actualizar habilidad</button>
+      </form>
+    </div>
+  </div>
+</div>

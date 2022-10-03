@@ -1,0 +1,18 @@
+*{
+  margin-right: 3%;
+}
+.btn{
+position: sticky;
+}
+  .edicion{
+    margin: 3%;
+    background-color:white;
+  }
+  .buton-fixed{
+    position: fixed;
+      right: 46px;
+      top: 30px;
+      width: 80px;
+      text-align: right;
+  }
+

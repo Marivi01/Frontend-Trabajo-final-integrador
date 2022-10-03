@@ -1,0 +1,54 @@
+<div class="edicion">
+<div class="container">
+    <div class="row">
+        <h4>Editar o cargar proyecto</h4>
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreProj">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="nombreProj" name="nombreProj" [(ngModel)]="nombreProj"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="urlProj">Url del Proyecto</label>
+                    <input type="text" class="form-control" id="urlProj" name="urlProj" [(ngModel)]="urlProj" required>
+                </div>
+                <button class="btn btn-primary">
+                    Agregar proyecto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container">
+  <div  class="row">
+    <div class="col">
+     <table class="table caption-top" >
+
+      <caption><h2>Proyectos realizados</h2></caption>
+     <thead class="col-m-3">
+      <tr class="table table-success table-stripe">
+        <th>Nombre del proyecto</th>
+        <th>Enlace al proyecto</th>
+
+      </tr>
+    </thead>
+    <tbody class="col-m-3">
+      <tr *ngFor="let Proyectos of proj">
+        <td><h6>{{Proyectos.nombreProj}}</h6></td>
+        <td>{{Proyectos.urlProj}}</td>
+
+          <td>
+           <button class="btn btn-light" routerLink="/editProject/{{Proyectos.id}}">
+              <i class="bi bi-pencil-fill"></i> Editar</button></td>
+              <td>
+                <button class="btn btn-danger"(click)="delete(Proyectos.id)">
+                  Borrar</button></td>
+      </tr>
+  </table>
+
+
+  </div>
+  </div>
+  </div>
+  </div>

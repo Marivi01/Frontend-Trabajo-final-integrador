@@ -1,0 +1,26 @@
+<div class="exp">
+  <div class="container">
+    <div class="row">
+      <h2>Habilidades duras y blandas</h2>
+
+      <div
+        class="text-center col-sm-4 col-md-4 col-lg-4"
+        *ngFor="let Habilidades of habil"
+      >
+        <circle-progress
+          [percent]="Habilidades.nivelHab"
+          [radius]="100"
+          [subtitle]="Habilidades.nombreHab"
+          [subtitleFontSize]="'150%'"
+          [subtitleColor]="'black'"
+          [outerStrokeWidth]="18"
+          [innerStrokeWidth]="9"
+          [outerStrokeColor]="'#DC7633'"
+          [innerStrokeColor]="'#D5B423'"
+          [animation]="true"
+          [animationDuration]="400"
+        ></circle-progress>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+.img-fluid {
+  padding-top: 5%;
+  border-radius: 50%;
+  width: 120px;
+  height: 140px;
+}
+.title{
+font-family: Comic Sans;
+font-size: 40px;
+}
+
+.title_2{
+  font-family: Comic Sans;
+  font-size: 30px;
+}
+.text{
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20%;
+
+}

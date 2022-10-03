@@ -1,14 +1,27 @@
-<div class="card" style="width: 100%;">
-  <div class="card-body">
-    <h2 class="card-title">Estudios</h2>
-    <h6 class="card-subtitle mb-2 text-muted"></h6>
-
-   <div class="card-text" >
-    <p >Secundario: Tecnico en Administración de Empresas  </p>
-    <p> Informática: IPIC</p>
-    <p>Argentina Programa: Se Programar</p>
+<div class="estudios">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <table class="table caption-top">
+          <caption>
+            <h2>Educación</h2>
+          </caption>
+          <thead class="col-m-3">
+            <tr class="table table-success table-striped">
+              <th>Establecimiento</th>
+              <th>Título</th>
+            </tr>
+          </thead>
+          <tbody class="col-m-3">
+            <tr *ngFor="let Estudios of est">
+              <td>
+                <h6>{{ Estudios.institucion }}</h6>
+              </td>
+              <td>{{ Estudios.titulo }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
-  </div>
-
-    <marquee BEHAVIOR=ALTERNATE Fontcolor="green" [bgColor]="">00011101000110011100011110101011100011001110101100100011100011100010010101000011010110010101100001110101101011010101010</marquee>
 </div>
