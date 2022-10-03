@@ -5,7 +5,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { ArticleComponent } from './components/article/article.component';
 import { AcercaDeComponent } from './components/acerca-de/acerca-de.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EstudiosComponent } from './components/estudios/estudios.component';
@@ -20,13 +19,21 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { EdicionComponent } from './components/edicion/edicion.component';
 import { NuevaExperienciaComponent } from './components/edicion/nueva-experiencia/nueva-experiencia.component';
 import { CommonModule } from '@angular/common';
-import { ExperienciaService } from './servicios/experiencia.service';
+import { NuevoEstudioComponent } from './components/edicion/nuevo-estudio/nuevo-estudio.component';
+import { HabilidadesComponent } from './components/habilidades/habilidades.component';
+import { NuevaHabilidadComponent } from './components/edicion/nueva-habilidad/nueva-habilidad.component';
+import { ProyectosComponent } from './components/proyectos/proyectos.component';
+import { NuevoProyectoComponent } from './components/edicion/nuevo-proyecto/nuevo-proyecto.component';
+import { EditarExperienciaComponent } from './components/edicion/editar-experiencia/editar-experiencia.component';
+import { EditarEducacionComponent } from './components/edicion/editar-educacion/editar-educacion.component';
+import { EditarProyectosComponent } from './components/edicion/editar-proyectos/editar-proyectos.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { EditarHabilidadComponent } from './components/edicion/editar-habilidad/editar-habilidad.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ArticleComponent,
     AcercaDeComponent,
     ExperienciaComponent,
     EstudiosComponent,
@@ -37,7 +44,17 @@ import { ExperienciaService } from './servicios/experiencia.service';
     AcercaDeComponent,
     EdicionComponent,
     NuevaExperienciaComponent,
-    
+    NuevoEstudioComponent,
+    HabilidadesComponent,
+    NuevaHabilidadComponent,
+    ProyectosComponent,
+    NuevoProyectoComponent,
+    EditarExperienciaComponent,
+    EditarEducacionComponent,
+    EditarProyectosComponent,
+    FooterComponent,
+    EditarHabilidadComponent
+
 
   ],
   imports: [
